@@ -3,14 +3,14 @@
 
 
 <p align="center">
-  <img src="path_to_logo.png" alt="Cloud API Security Logo" width="200">
+  <img src="https://i.imgur.com/owEMo5g.jpg" alt="Cloud API Security Logo" width="400">
 </p>
 
 <div align="center">
 
 [![Build Status](https://img.shields.io/badge/build-passing-brightgreen.svg?style=for-the-badge)](LINK_TO_BUILD)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](LICENSE)
-[![Contributors](https://img.shields.io/github/contributors/REPO_OWNER/REPO_NAME?style=for-the-badge)](https://github.com/REPO_OWNER/REPO_NAME/graphs/contributors)
+[![Contributors](https://img.shields.io/github/contributors/REPO_OWNER/REPO_NAME?style=for-the-badge)](https://github.com/uakbr/cloud-api/graphs/contributors)
 [![Version](https://img.shields.io/badge/version-1.0.0-blue.svg?style=for-the-badge)](CHANGELOG.md)
 > **Ensuring paramount security for your cloud-based APIs.**
 </div>
