@@ -1,4 +1,4 @@
-```python
+
 # src/app/services/api_service.py
 
 import boto3
@@ -49,4 +49,4 @@ class APIService:
 
     def get_scan_results(self, user_id):
         return ScanResult.query.filter_by(user_id=user_id).all()
-```
+

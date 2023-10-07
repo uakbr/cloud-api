@@ -1,4 +1,4 @@
-```python
+
 # src/app/plugins/custom_plugin.py
 
 from abc import ABC, abstractmethod
@@ -45,4 +45,4 @@ class ExampleCustomPlugin(CustomPlugin):
             'cloud_provider': cloud_provider,
             'vulnerabilities': [],
         }
-```
+

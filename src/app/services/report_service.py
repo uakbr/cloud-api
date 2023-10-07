@@ -1,4 +1,4 @@
-```python
+
 # src/app/services/report_service.py
 
 from ..models.scan_result import ScanResult
@@ -47,4 +47,4 @@ class ReportService:
             report['vulnerabilities'][result.vulnerabilities] += 1
 
         return report
-```
+

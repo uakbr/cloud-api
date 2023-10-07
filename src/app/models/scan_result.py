@@ -1,4 +1,4 @@
-```python
+
 # src/app/models/scan_result.py
 
 from flask_sqlalchemy import SQLAlchemy
@@ -16,4 +16,4 @@ class ScanResult(db.Model):
 
     def __repr__(self):
         return '<ScanResult {}>'.format(self.id)
-```
+

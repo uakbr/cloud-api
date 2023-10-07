@@ -1,4 +1,3 @@
-```python
 # src/app/controllers/api_controller.py
 
 from flask import Blueprint, request, jsonify
@@ -6,10 +5,11 @@ from flask_login import login_required, current_user
 from ..models.scan_result import ScanResult
 from ..services.api_service import APIService
 from ..app import db
+from datetime import datetime
 
 bp = Blueprint('api', __name__, url_prefix='/api')
 
-@api.route('/scan', methods=['POST'])
+@bp.route('/scan', methods=['POST'])
 @login_required
 def scan_api():
     data = request.get_json()
@@ -36,7 +36,7 @@ def scan_api():
 
     return jsonify({'message': 'Scan completed successfully'}), 200
 
-@api.route('/scan_results', methods=['GET'])
+@bp.route('/scan_results', methods=['GET'])
 @login_required
 def get_scan_results():
     # Get scan results for current user
@@ -46,4 +46,3 @@ def get_scan_results():
     scan_results_json = [scan_result.to_json() for scan_result in scan_results]
 
     return jsonify(scan_results_json), 200
-```

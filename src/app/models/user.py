@@ -1,4 +1,4 @@
-```python
+
 # src/app/models/user.py
 
 from flask_sqlalchemy import SQLAlchemy
@@ -21,4 +21,4 @@ class User(db.Model):
 
     def __repr__(self):
         return '<User {}>'.format(self.username)
-```
+

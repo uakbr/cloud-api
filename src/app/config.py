@@ -1,4 +1,4 @@
-```python
+
 # src/app/config.py
 
 import os
@@ -32,4 +32,4 @@ class Config:
 
     # Other settings
     LOG_LEVEL = os.getenv('LOG_LEVEL', 'INFO')
-```
+

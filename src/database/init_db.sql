@@ -1,5 +1,5 @@
-```sql
--- src/database/init_db.sql
+
+-- src/database/init_db.
 
 -- Create users table
 CREATE TABLE users (
@@ -19,4 +19,4 @@ CREATE TABLE scan_results (
     vulnerabilities TEXT,
     FOREIGN KEY (user_id) REFERENCES users(id)
 );
-```
+

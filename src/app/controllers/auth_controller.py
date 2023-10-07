@@ -1,4 +1,3 @@
-```python
 # src/app/controllers/auth_controller.py
 
 from flask import Blueprint, request, jsonify, make_response
@@ -8,6 +7,8 @@ from ..app import db
 from werkzeug.security import generate_password_hash, check_password_hash
 from itsdangerous import TimedJSONWebSignatureSerializer as Serializer
 from ..config import Config
+
+config = Config()
 
 bp = Blueprint('auth', __name__, url_prefix='/auth')
 
@@ -55,7 +56,7 @@ def login():
 
     login_user(user)
 
-    s = Serializer(Config.SECRET_KEY, 60 * 60 * 24)
+    s = Serializer(config.SECRET_KEY, 60 * 60 * 24)
     token = s.dumps({'id': user.id}).decode('utf-8')
 
     return jsonify({'token': token})
@@ -65,4 +66,3 @@ def login():
 def logout():
     logout_user()
     return make_response('Logged out', 200)
-```
