@@ -1,0 +1,32 @@
+# Flask for web application
+Flask==1.1.2
+
+# SQLAlchemy for database operations
+SQLAlchemy==1.3.19
+
+# Psycopg2 for PostgreSQL database
+psycopg2-binary==2.8.6
+
+# Boto3 for AWS API
+boto3==1.16.23
+
+# Azure SDK for Azure API
+azure-mgmt-resource==10.2.0
+
+# Google Cloud SDK for GCP API
+google-cloud-storage==1.32.0
+
+# Requests for making HTTP requests
+requests==2.24.0
+
+# OAuthlib for OAuth 2.0 authentication
+oauthlib==3.1.0
+
+# PyJWT for handling JWT tokens
+PyJWT==1.7.1
+
+# Pytest for testing
+pytest==6.1.2
+
+# Gunicorn for WSGI HTTP Server
+gunicorn==20.0.4
